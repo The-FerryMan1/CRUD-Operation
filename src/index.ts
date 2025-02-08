@@ -4,7 +4,7 @@ import {logger} from 'hono/logger';
 import { userRoute } from './routes/user';
 
 
-const app = new Hono().basePath('api/v1/user');
+const app = new Hono().basePath('api/v1');
 
 
 app.use(logger());

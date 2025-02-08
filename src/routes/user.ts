@@ -6,7 +6,7 @@ import { Users } from '../db/schema';
 import { updateUser } from '../rules/addRules';
 import { eq } from 'drizzle-orm';
 
-const app = new Hono();
+const app = new Hono().basePath('/user');
 
 app.post('/', validator('json', (value, c)=>{
 
